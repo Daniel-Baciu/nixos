@@ -78,9 +78,15 @@
   environment.systemPackages = with pkgs; [
     git
     kdePackages.kcalc
+    obsidian
   #   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #   wget
   ];
+
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (lib.getName pkg) [
+      "obsidian"
+    ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
