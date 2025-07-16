@@ -107,6 +107,8 @@
     desktopManager.plasma6.enable = true;
   };
 
+  services.flatpak.enable = true;
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
