@@ -81,6 +81,7 @@
     qbittorrent
     obsidian
     clang
+    gnumake
   #   wget
   ];
 
