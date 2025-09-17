@@ -82,6 +82,7 @@
     obsidian
     clang
     gnumake
+    wineWowPackages.stableFull
   #   wget
   ];
 
