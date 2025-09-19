@@ -83,7 +83,7 @@
     clang
     gnumake
     wineWowPackages.stableFull
-  #   wget
+    wget
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
