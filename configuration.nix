@@ -84,11 +84,13 @@
     gnumake
     wineWowPackages.stableFull
     wget
+    discord
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
       "obsidian"
+      "discord"
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
