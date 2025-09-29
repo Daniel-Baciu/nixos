@@ -84,6 +84,7 @@
     gnumake
     wineWowPackages.stableFull
     wget
+    gnupg
     discord
   ];
 
