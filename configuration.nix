@@ -86,6 +86,7 @@
     wget
     gnupg
     discord
+    jdk
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
