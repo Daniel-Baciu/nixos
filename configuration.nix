@@ -87,6 +87,7 @@
     gnupg
     discord
     jdk
+    libreoffice
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
