@@ -89,6 +89,8 @@
     jdk
     libreoffice
     ungoogled-chromium
+    rustc
+    cargo
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
