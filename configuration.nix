@@ -88,6 +88,7 @@
     discord
     jdk
     libreoffice
+    ungoogled-chromium
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
