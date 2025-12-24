@@ -77,7 +77,6 @@
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
     git
-    kdePackages.kcalc
     qbittorrent
     obsidian
     clang
@@ -110,11 +109,8 @@
   # List services that you want to enable:
 
   services = {
-    displayManager.sddm= {
-      enable = true;
-      wayland.enable = true;
-    };
-    desktopManager.plasma6.enable = true;
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
   };
 
   services.flatpak.enable = true;
