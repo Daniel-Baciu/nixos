@@ -65,7 +65,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.daniel = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user (and network management).
+    extraGroups = [ "wheel" "docker" "networkmanager" ]; # Enable ‘sudo’ for the user (and network management).
   #   packages = with pkgs; [
   #     tree
   #   ];
@@ -90,12 +90,14 @@
     ungoogled-chromium
     rustc
     cargo
+    vscode
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
       "obsidian"
       "discord"
+      "vscode"
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -114,6 +116,8 @@
   };
 
   services.flatpak.enable = true;
+
+  virtualisation.docker.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
