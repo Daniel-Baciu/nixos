@@ -93,11 +93,17 @@
     vscode
   ];
 
+  programs.steam = {
+    enable = true;
+  };
+
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (lib.getName pkg) [
       "obsidian"
       "discord"
       "vscode"
+      "steam"
+      "steam-unwrapped"
     ];
 
   # Some programs need SUID wrappers, can be configured further or are
