@@ -93,6 +93,7 @@
     vscode
     gcc
     valgrind
+    element-desktop
   ];
 
   programs.steam = {
