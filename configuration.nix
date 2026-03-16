@@ -91,6 +91,8 @@
     rustc
     cargo
     vscode
+    gcc
+    valgrind
   ];
 
   programs.steam = {
